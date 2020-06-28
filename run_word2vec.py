@@ -2,7 +2,8 @@
 """
 参考
 1、https://radimrehurek.com/gensim/auto_examples/tutorials/run_word2vec.html
-2、https://mp.weixin.qq.com/s/j8JPMZSPoVT_hQswX5QVxA
+2、https://mp.weixin.qq.com/s/j8JPMZSPoVT_hQswX5QVxA  (该博客中，采用了list(MySentences(DataDir+f_input))，这样会
+把全部数据加载到内存中，导致生成器不起作用了，因此下面对这一问题进行了解决)
 """
 
 from gensim.models import word2vec
